@@ -1,0 +1,1 @@
+{"uuid":"93da5ea2-f148-4ba8-8017-c72c96690f45","name":"smule.LoginTest","children":["7c8c2d5e-7b8a-46ee-bcc4-635cb1cd6760"],"befores":[{"name":"getDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1695878932385,"stop":1695878993347}],"afters":[],"start":1695878932335,"stop":1695879030716}

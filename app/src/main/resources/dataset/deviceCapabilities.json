@@ -1,0 +1,8 @@
+{
+  "platformName": "Android",
+
+  "appium:app": "/Users/testvagrant-1/Downloads/smule-11-2-1.apk",
+  "appium:automationName": "UiAutomator2",
+  "appium:udid": "emulator-5554"
+
+}
