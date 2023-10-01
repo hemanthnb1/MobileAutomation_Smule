@@ -31,7 +31,7 @@ public class SmuleAppTest extends  BaseTest{
     }
 
 
-    @Test(groups = "sanity")
+    @Test(groups = "functional")
     public void searchTest(){
         HomeScreen homeScreen = new HomeScreen();
         SearchScreen searchScreen;
@@ -63,7 +63,7 @@ public class SmuleAppTest extends  BaseTest{
     }
 
 
-    @Test(groups = "sanity")
+    @Test(groups = "functional")
     public void feedTest(){
         HomeScreen homeScreen = new HomeScreen();
         FeedScreen feedScreen = new FeedScreen();
@@ -80,7 +80,7 @@ public class SmuleAppTest extends  BaseTest{
     }
 
 
-    @Test(groups = "sanity")
+    @Test(groups = "functional")
     public void chatTest() throws InterruptedException {
 
         String text="Hey Wassup!!";
