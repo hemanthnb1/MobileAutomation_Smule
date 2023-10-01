@@ -12,12 +12,12 @@ public class SearchLocators extends BasePage {
     SearchLocators() {
         PageFactory.initElements(new AppiumFieldDecorator(androidDriver), this);
     }
-    @AndroidFindBy(id = "com.smule.singandroid:id/pre_search_title_text_view")
-    public WebElement searchBtn;
-
     @AndroidFindBy(id="com.smule.singandroid:id/search_edit_text")
     public WebElement searchBar;
 
-    @AndroidFindBy(xpath = "//android.view.ViewGroup[@index=0]//android.widget.TextView[@text='After Hours']")
-    public List<WebElement> searchResults;
+    @AndroidFindBy(xpath = "//android.widget.ListView//android.widget.TextView\n")
+    public List<WebElement> searchResultsDropDown;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index=2]//android.widget.TextView[@index=2]")
+    public WebElement searchResult;
 }

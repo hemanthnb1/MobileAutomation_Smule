@@ -6,6 +6,8 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ChattingLocators extends BasePage {
 
     //    com.smule.singandroid:id/messageIcon
@@ -25,8 +27,24 @@ public class ChattingLocators extends BasePage {
         PageFactory.initElements(new AppiumFieldDecorator(androidDriver), this);
     }
 
-    @AndroidFindBy(id = " com.smule.singandroid:id/messageIcon")
-    public WebElement messageIcon;
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index = '4' and @enabled = 'true']/android.widget.LinearLayout[@index = '0']")
+    public  WebElement newChatIcon;
 
+    @AndroidFindBy(id = "com.smule.singandroid:id/search_edit_text")
+    public WebElement searchUserInputBox;
 
+    @AndroidFindBy(id = "com.smule.singandroid:id/chat_title")
+    public WebElement user;
+
+    @AndroidFindBy(id = "com.smule.singandroid:id/new_chat_forward_chat")
+    public WebElement forwardChatButton;
+
+    @AndroidFindBy(id="com.smule.singandroid:id/inputBox")
+    public  WebElement chatInputBox;
+
+    @AndroidFindBy(id = "com.smule.singandroid:id/send_button")
+    public  WebElement sendBtn;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index=2]//android.widget.TextView[@index='0']")
+    public List<WebElement> chatHistory;
 }

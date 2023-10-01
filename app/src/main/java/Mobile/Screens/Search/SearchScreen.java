@@ -17,17 +17,20 @@ public class SearchScreen extends SearchLocators{
 //    }
 
     public SearchScreen searchSong(String songName){
-        waits.addExplicitWaits(searchBtn);
-        searchBtn.click();
         waits.addExplicitWaits(searchBar);
         searchBar.sendKeys(songName);
-        searchBar.sendKeys(Keys.ENTER);
         return  this;
     }
 
-    public String getSearchResults(){
-
-        waits.addExplicitWaits(searchResults.get(0));
-        return searchResults.get(0).getText();
+    public SearchScreen selectSearchResults(){
+        waits.addExplicitWaitsforListOfElements(searchResultsDropDown);
+         searchResultsDropDown.get(0).click();
+         return this;
     }
+
+    public String getSearchResult(){
+        waits.addExplicitWaits(searchResult);
+        return searchResult.getText();
+    }
+
 }

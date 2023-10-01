@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class driverWaits extends BasePage {
     WebDriverWait wait;
@@ -17,6 +18,9 @@ public class driverWaits extends BasePage {
     }
     public WebElement addExplicitWaits(WebElement by){
         return wait.until(ExpectedConditions.elementToBeClickable(by));
+    }
+    public List<WebElement> addExplicitWaitsforListOfElements(List<WebElement> by){
+        return wait.until(ExpectedConditions.visibilityOfAllElements(by));
     }
 
 }
