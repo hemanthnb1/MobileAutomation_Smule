@@ -22,11 +22,11 @@ public class ConfigLoader {
         return jsonPath.getMap(".");
     }
 
-    public static void main(String[] args) throws MalformedURLException {
-        AppiumDriver androidDriver=null;
-        Map<String,String>map=getCapability();
-        System.out.println(map);
-        DesiredCapabilities desiredCapabilities = new DesiredCapabilities(getCapability());
-        androidDriver=new AndroidDriver(new URL("http://localhost:4723/wd/hub"),desiredCapabilities);
-    }
+//    public static void main(String[] args) throws MalformedURLException {
+//        AppiumDriver androidDriver=null;
+//        Map<String,String>map=getCapability();
+//        System.out.println(map);
+//        DesiredCapabilities desiredCapabilities = new DesiredCapabilities(getCapability());
+//        androidDriver=new AndroidDriver(new URL("http://localhost:4723/wd/hub"),desiredCapabilities);
+//    }
 }
